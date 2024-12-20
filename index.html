@@ -359,7 +359,7 @@
 					<div class="subs_form">
 						<h3>Quick Contact</h3>
 						<p>Submit your details. Our team will get back to you soon.</p>
-						<form class="form mt-5" method="post" action="https://script.google.com/macros/s/AKfycbzbz7Cdfew4qvbbrNmDcvYm3-qkpKwFqad6pj0V5h6SGZO11XcAz9ZqJO-oz4kMt8WG/exec" name="Contact Form" id="gform">
+						<form class="form mt-5" method="post" action="" name="Contact Form" id="submit-form">
 							<div class="row">
 							  <div class="form-group col-md-6">
 								<label for="fname">Name</label>
@@ -521,7 +521,25 @@
 		<script src="assets/js/scripts.js"></script>
 		<script type="text/javascript" src="assets/js/serialize.js"></script>	
 
-	
+		<script>
+			$("#submit-form").submit((e)=>{
+				e.preventDefault()
+				$.ajax({
+					url:"https://script.google.com/macros/s/AKfycbzbz7Cdfew4qvbbrNmDcvYm3-qkpKwFqad6pj0V5h6SGZO11XcAz9ZqJO-oz4kMt8WG/exec",
+					data:$("#submit-form").serialize(),
+					method:"post",
+					success:function (response){
+						alert("Form submitted successfully")
+						window.location.reload()
+						//window.location.href="https://google.com"
+					},
+					error:function (err){
+						alert("Something Error")
+		
+					}
+				})
+			})
+		</script>
 	  
 </body>
 </html>
