@@ -66,15 +66,15 @@
 								<li><a class="nav-link" href="courses.html">Courses <span class="ti-angle-down"></span></a>
 									<ul>
 																			<li><a class="nav-link" href="courses/little-caliph-kids-kingdom.html">Little Caliph - Kids Kingdom</a></li>
-																<li><a class="nav-link" href="courses/caliph-virtual-madrassa.html">Caliph virtual Madrassa</a></li>
-																<li><a class="nav-link" href="courses/diploma-in-practical-islam.html">Value Education For Adults</a></li>
+																<li><a class="nav-link" href="courses/Play-with-Alphabets.html">Play with Alphabets</a></li>
+																<li><a class="nav-link" href="courses/regular-madrasa-tuition.html">Regular Madrasa Tuition</a></li>
 																<li><a class="nav-link" href="courses/value-education-for-adults.html">Quran School</a></li>
-																<li><a class="nav-link" href="courses/caliph-skill-bank.html">Caliph Skill Bank</a></li>
-																<li><a class="nav-link" href="courses/virtual-school-tution.html">Virtual School Tution</a></li>
+																<li><a class="nav-link" href="courses/short-term-madrasa.html">Short Term Madrasa</a></li>
+																<li><a class="nav-link" href="courses/long-term-madrasa.html">Long Term Madrasa</a></li>
 																</ul>
 								</li>								
 								<li><a class="nav-link" href="gallery.html">Gallery</a></li>
-								<li><a class="nav-link" href="#">Blog</a></li>
+								<li><a class="nav-link" href="blog.html">Blog</a></li>
 								<li><a class="nav-link" href="career.html">Career</a></li>
 								<li><a class="nav-link d-lg-none" href="contact-us.html">Contact Us</a></li>
 							</ul>
@@ -117,11 +117,12 @@
 				<div class="row">					
 					<div class="offset-lg-1 col-lg-10 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="contact">
-							<form class="form" method="post" action="#" enctype="multipart/form-data" >
+							<form class="form" method="post" action="https://script.google.com/macros/s/AKfycbwtJ2vO7yEnrall-s65gazAne_QGrjBweiSaMChW_EQdHLYZ4F6ankr3O-oBUDFg3E/exec" id="career-form" enctype="multipart/form-data" >
 								<div class="row">
 									<div class="form-group col-md-4">
 										<label for="fullname">Name</label>
 										<input type="text" name="fullname" class="form-control" required="required">
+										
 									</div>
 									<div class="form-group col-md-3">
 										<label for="dob">Date of Birth</label>
@@ -149,32 +150,23 @@
 										<label for="phone2">Alternate Contact Number</label>
 										<input type="text" name="phone2" class="form-control" required="required">
 									</div>
-									<div class="form-group col-md-3">
-										<label for="subject">Subject That Can Be Handled</label>										
-										<select name="subject" class="subject">
-											<option value="Physics">Physics</option>
-											<option value="Chemistry">Chemistry</option>
-											<option value="Biology">Biology</option>
-											<option value="Maths">Maths</option>
-											<option value="Other">Other</option>
-										</select>
+									
+									<div class="clearfix"></div>
+									<div class="form-group col-md-6">
+										<label for="class">Subjects That Can Be Handled</label>
+										<label class="form-check-label"><input type="checkbox" name="Subject[]" value="Basic Arabic" class="subject" > Basic Arabic</label>
+										<label class="form-check-label"><input type="checkbox" name="Subject[]" value="Madrasa Subjects" class="subject" > Madrasa Subjects</label>
+										<label class="form-check-label"><input type="checkbox" name="Subject[]" value="Quran cum Tajwid" class="subject" > Quran cum Tajwid</label>
+										<label class="form-check-label"><input type="checkbox" name="Subject[]" value="Advance Fiqh" class="subject" > Advance Fiqh</label>
+										<label class="form-check-label"><input type="checkbox" name="Subject[]" value="Other" class="subject" > Other</label>
 									</div>
 									<div class="form-group col-md-3 specify_subject">
 										<label for="subject_name">Please Specify Subject</label>
-										<input type="text" name="subject_name" class="form-control">
+										<input type="text" name="Subject[]" class="form-control">
 									</div>
 									<div class="clearfix"></div>
 									<div class="form-group col-md-6">
-										<label for="class">Classes That Can Be Handled</label>
-										<label class="form-check-label"><input type="checkbox" name="class[]" value="KG" class="classes" > KG</label>
-										<label class="form-check-label"><input type="checkbox" name="class[]" value="1-4" class="classes" > 1-4</label>
-										<label class="form-check-label"><input type="checkbox" name="class[]" value="5-7" class="classes" > 5-7</label>
-										<label class="form-check-label"><input type="checkbox" name="class[]" value="8-10" class="classes" > 8-10</label>
-										<label class="form-check-label"><input type="checkbox" name="class[]" value="11-12" class="classes" > 11-12</label>
-									</div>
-									<div class="clearfix"></div>
-									<div class="form-group col-md-6">
-										<label for="class">Language</label>
+										<label for="class">Languages That Can Be Communicate</label>
 										<label class="form-check-label"><input type="checkbox" name="language[]" value="English" class="language" > English</label>
 										<label class="form-check-label"><input type="checkbox" name="language[]" value="Malayalam" class="language" > Malayalam</label>
 										<label class="form-check-label"><input type="checkbox" name="language[]" value="Urdu" class="language" > Urdu</label>
@@ -183,7 +175,7 @@
 									</div>
 									<div class="form-group col-md-3 specify_language">
 										<label for="language_name">Please Specify Language</label>
-										<input type="text" name="language_name" class="form-control">
+										<input type="text" name="language[]" class="form-control">
 									</div>
 									<div class="clearfix"></div>
 									<div class="form-group col-md-3 mb-4">
@@ -226,11 +218,11 @@
 						<h4>Courses</h4>
 						<ul>
 														<li><a href="courses/little-caliph-kids-kingdom.html">Little Caliph - Kids Kingdom</a></li>
-														<li><a href="courses/caliph-virtual-madrassa.html">Caliph virtual Madrassa</a></li>
-														<li><a href="courses/diploma-in-practical-islam.html">Value Education For Adults</a></li>
+														<li><a href="courses/Play-with-Alphabets.html">Play with Alphabets</a></li>
+														<li><a href="courses/regular-madrasa-tuition.html">Regular Madrasa Tuition</a></li>
 														<li><a href="courses/value-education-for-adults.html">Quran School</a></li>
-														<li><a href="courses/caliph-skill-bank.html">Caliph Skill Bank</a></li>
-														<li><a href="courses/virtual-school-tution.html">Virtual School Tution</a></li>
+														<li><a href="courses/short-term-madrasa.html">Short Term Madrasa</a></li>
+														<li><a href="courses/long-term-madrasa.html">Long Term Madrasa</a></li>
 													</ul>
 					</div>
 				</div><!--- END COL -->	
@@ -243,7 +235,7 @@
 							<li><a href="gallery.html">Gallery</a></li>
 							<li><a href="contact-us.html">Contact Us</a></li>
 							<li><a href="career.html">Career</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><a href="blog.html">Blog</a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->	
@@ -263,7 +255,7 @@
 						<div class="sf_contact">
 							<span class="ti-email"></span>
 							<h3>Email Address</h3>
-							<p>caliphvirtualschool@gmail.com</p>
+							<p>caliphvirtualmadrasa@gmail.com</p>
 						</div>
 						
 					</div>
@@ -274,9 +266,9 @@
 					</div>
 					<div class="foot_social">
 						<ul>
-							<li><a href="https://www.instagram.com/caliph.virtual.school/"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="mailto:caliphvirtualschool@gmail.com"><i class="fa fa-envelope"></i></a></li>
+							<li><a href="https://www.instagram.com/the.virtual.madrasa/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://www.facebook.com/thevirtualmadrasa"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.youtube.com/@thevirtualmadrasa"><i class="fa fa-youtube-play"></i></a></li>
 						</ul>						
 					</div>				
 				</div><!--- END COL -->	
@@ -298,13 +290,7 @@
 			</div>				
 		</div><!--- END CONTAINER -->
 	</div>
-
-	<a href="https://api.whatsapp.com/send?phone=+919072344424&amp;text=" class="float" target="_blank">
-		<i class="fa fa-whatsapp my-float"></i>
-	</a>
-	<a href="tel:+91 9072 3444 24" class="float float-phone" target="_blank">
-		<i class="fa fa-phone my-float"></i>
-	</a>	<!-- END FOOTER -->		
+	<!-- END FOOTER -->			
 		
 	<!-- Latest jQuery -->
 		<script src="assets/js/jquery-1.12.4.min.js"></script>
@@ -328,31 +314,25 @@
 		<script src="assets/js/scripts.js"></script>
 		<script type="text/javascript" src="assets/js/serialize.js"></script>	
 
-	<script type="text/javascript">
-
-		$(".subject").change(function(){
-			if($(this).val() == "Other")
-				$(".specify_subject").show();
-			else
-				$(".specify_subject").hide();
-		});
-
-		$(".language").click(function(){
-			if($(".language[value=Other]").is(":checked"))
-				$(".specify_language").show();
-			else
-				$(".specify_language").hide();
-		});
-
+		<!-- <script>
+			$("#career-form").submit((e)=>{
+				e.preventDefault()
+				$.ajax({
+					url:"https://script.google.com/macros/s/AKfycbzO8HfwFW4veTFbG-5WLbKN7GDmKyYavR3s46aAB1hCd72D3qu2efEsbKYtzoqL2M_AuQ/exec",
+					data:$("#submit-form").serialize(),
+					method:"post",
+					success:function (response){
+						alert("Form submitted successfully")
+						window.location.reload()
+						//window.location.href="https://google.com"
+					},
+					error:function (err){
+						alert("Something Error")
 		
-		function validation(){
-			if($('.classes:checked').length == 0)
-				return false;
-			if($('.language:checked').length == 0)
-				return false;
-		}
-        
-    </script>
+					}
+				})
+			})
+		</script> -->
 
 </body>
 
